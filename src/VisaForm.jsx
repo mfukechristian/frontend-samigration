@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 function VisaForm() {
   const [formData, setFormData] = useState({
+    name: "",
     nationality: "",
     countryOfResidence: "",
     intention: "",
@@ -44,6 +45,18 @@ function VisaForm() {
       <h2>Get the Best Visa Advice with AI</h2>
       <form onSubmit={handleSubmit}>
         <div>
+          <label>Full Name *</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div>
           <label>Nationality *</label>
           <select
             name="nationality"
@@ -62,6 +75,11 @@ function VisaForm() {
             <option value="Ghana">Ghana</option>
             <option value="Zimbabwe">Zimbabwe</option>
             <option value="Namibia">Namibia</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Brazil">Brazil</option>
           </select>
         </div>
 
@@ -84,6 +102,11 @@ function VisaForm() {
             <option value="Ghana">Ghana</option>
             <option value="Zimbabwe">Zimbabwe</option>
             <option value="Namibia">Namibia</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Brazil">Brazil</option>
           </select>
         </div>
 
@@ -100,6 +123,8 @@ function VisaForm() {
             <option value="Work">Work</option>
             <option value="Tourism">Tourism</option>
             <option value="Permanent Residence">Permanent Residence</option>
+            <option value="Family Reunion">Family Reunion</option>
+            <option value="Asylum">Asylum</option>
           </select>
         </div>
 
