@@ -18,6 +18,27 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
+  background-color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff;
+  border-color: #6c5ce7;
+}
+
+input:-webkit-autofill {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  color: inherit;
+}
+
+input:-webkit-autofill:focus {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  border-color: #6c5ce7;
 }
 
 textarea {
@@ -28,6 +49,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  outline: none;
 }
 
 select {
@@ -37,6 +59,7 @@ select {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #667085;
+  outline: none;
 }
 
 input::placeholder,
