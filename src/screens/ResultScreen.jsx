@@ -15,7 +15,6 @@ function ResultScreen() {
 
   return (
     <div className="result-screen">
-      <h1>Visa Advice Result</h1>
       <ReactMarkdown>{response}</ReactMarkdown>
       <button onClick={handleBack}>Back to Form</button>
     </div>

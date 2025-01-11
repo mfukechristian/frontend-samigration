@@ -7,6 +7,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #667085;
@@ -76,4 +78,8 @@ button {
   padding: 12px;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.main {
+  min-height: 80vh;
 }

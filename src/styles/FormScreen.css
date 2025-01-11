@@ -1,6 +1,6 @@
 .form-screen {
   width: 400px;
-  margin: 30px auto;
+  margin: 100px auto 30px auto;
   padding: 20px;
   text-align: left;
 }
@@ -9,6 +9,7 @@ h1 {
   font-weight: 400;
   margin-bottom: 10px;
   width: 350px;
+  color: black;
 }
 
 p {
