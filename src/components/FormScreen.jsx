@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { ColorRing } from "react-loader-spinner";
 import "../styles/FormScreen.css";
 
 function FormScreen() {
@@ -46,6 +47,7 @@ function FormScreen() {
     return (
       <div className="loading-screen">
         <p>Loading .....</p>
+        <div className="spinner"></div>
       </div>
     );
   }
