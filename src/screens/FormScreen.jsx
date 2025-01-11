@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { ColorRing } from "react-loader-spinner";
+import CountrySelect from "../components/CountrySelect";
 import "../styles/FormScreen.css";
 
 function FormScreen() {
@@ -73,16 +73,11 @@ function FormScreen() {
         </label>
         <label>
           Nationality
-          <select
+          <CountrySelect
             name="nationality"
             value={formData.nationality}
             onChange={handleChange}
-            required
-          >
-            <option value="">Select a country</option>
-            <option value="South Africa">South Africa</option>
-            <option value="Other">Other</option>
-          </select>
+          />
         </label>
         <label>
           Reasons
@@ -95,6 +90,12 @@ function FormScreen() {
             <option value="">Select your reason</option>
             <option value="Tourism">Tourism</option>
             <option value="Work">Work</option>
+            <option value="Study in SA">Study in SA</option>
+            <option value="Medical Treatment">To come for medical</option>
+            <option value="Permanent Residency">
+              To get permanent residency
+            </option>
+            <option value="Asylum">To seek asylum</option>
           </select>
         </label>
         <label>
