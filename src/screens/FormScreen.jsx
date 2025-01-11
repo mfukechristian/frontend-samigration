@@ -32,7 +32,7 @@ function FormScreen() {
       delete payload.reason;
 
       const response = await axios.post(
-        "http://localhost:5000/api/visa-advice",
+        "https://backend-samigration.onrender.com/api/visa-advice",
         payload
       );
       navigate("/result", { state: { response: response.data.response } });
