@@ -1,10 +1,9 @@
-Here's an updated documentation based on your tech stack:
-
----
-
 # **Samigration - AI-Powered Visa Advisory for South Africa**
 
 **Samigration** is an AI-driven web application that provides personalized visa advice for South Africa. The app leverages **Retrieval-Augmented Generation (RAG)** to embed and retrieve visa-related information, ensuring users receive accurate and tailored guidance based on their profile.
+
+
+![smigration](https://github.com/user-attachments/assets/495f906c-b84b-4031-9f71-071b01937916)
 
 ---
 
@@ -114,9 +113,12 @@ Create a `.env` file in the backend directory and add the following credentials:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
+MONGO_DB_NAME=your_database_name
+MONGO_COLLECTION_NAME=your_collection_name
 GEMINI_API_KEY=your_google_gemini_api_key
 MISTRAL_API_KEY=your_mistral_api_key
 PORT=5000
+
 ```
 
 ---
